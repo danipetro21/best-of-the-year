@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Song</title>
+</head>
+<body>
+
+<h1>Best Song</h1>
+
+
+<table>
+    <tbody>
+    <tr th:each="song: ${bestSong}">
+        <td th:text="${song.id}"></td>
+        <td th:text="${song.titolo}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

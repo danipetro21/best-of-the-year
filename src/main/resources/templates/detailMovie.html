@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <th:block th:replace="fragments :: head"></th:block>
+  <title th:text="${movie.titolo}"></title>
+</head>
+<body>
+<div class="container">
+<nav th:replace="fragments :: navbar"></nav>
+
+<h1 th:text="${movie.titolo}"></h1>
+<div th:object="${movie}">
+  <p th:text="|Descrizione: *{descrizione}|"></p>
+</div>
+</div>
+
+</body>
+</html>

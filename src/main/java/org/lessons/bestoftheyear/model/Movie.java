@@ -1,14 +1,16 @@
-package org.lessons.bestoftheyear;
+package org.lessons.bestoftheyear.model;
 
 public class Movie {
 
     private int id;
     private String titolo;
+    private String descrizione;
 
 
-    public Movie(int id, String titolo) {
+    public Movie(int id, String titolo, String descrizione) {
         this.id = id;
         this.titolo = titolo;
+        this.descrizione = descrizione;
     }
 
     public int getId() {
@@ -25,6 +27,15 @@ public class Movie {
 
     public void setTitolo(String titolo) {
         this.titolo = titolo;
+    }
+
+
+    public String getDescrizione() {
+        return descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
     }
 
     @Override

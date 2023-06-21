@@ -1,13 +1,15 @@
-package org.lessons.bestoftheyear;
+package org.lessons.bestoftheyear.model;
 
 public class Song {
 
     private int id;
     private String titolo;
+    private String artista;
 
-    public Song(int id, String titolo) {
+    public Song(int id, String titolo, String artista) {
         this.id = id;
         this.titolo = titolo;
+        this.artista = artista;
     }
 
     public int getId() {
@@ -24,6 +26,14 @@ public class Song {
 
     public void setTitolo(String titolo) {
         this.titolo = titolo;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     @Override
